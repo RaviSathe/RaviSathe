@@ -1,0 +1,37 @@
+
+
+<!-- ------------------------------------------------------ -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col" >First Name</th>
+            <th scope="col" >Last Name</th>
+            <th scope="col" >Email ID</th>
+            <th scope="col" >Contact</th>
+            <th scope="col" >Nikaal</th>
+        </tr>
+    </thead>
+    <tbody>    
+        <tr *ngFor="let row of userdataall"> 
+           <td>{{row.id}}</td>
+           <td>{{row.firstname}}</td>
+           <td>{{row.lastname}}</td>
+           <td>{{row.email}}</td>
+           <td>{{row.contact}}</td>
+           <!-- <td>1</td>
+           <td>Ravi</td>
+           <td>Sathe</td>
+           <td>ravisathe20@gmail.com</td>
+           <td>1029384756</td> -->
+            <td>
+                <button (click)="edituser(row)" type="button" class="btn btn-primary"  class="btn btn-primary">Edit</button><a routerLink='/update/{{row.id}}' ></a>
+                <!-- <button (click)="deleteuser(row)" class="btn btn-danger">Remove</button>  -->
+                <button (click)="deleteuser(row)" class="btn btn-danger">Remove</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

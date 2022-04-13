@@ -1,0 +1,10 @@
+<form [formGroup]="basic" (ngSubmit)="basic">
+    <input type="text" class="form-control" [(ngModel)]="xyzobj.firstname" formControlName="firstname" placeholder="First Name"><br>
+    <input type="text" class="form-control" ngModel formControlName="lastname" placeholder="Last Name"><br>
+    <input type="email" class="form-control" ngModel formControlName="email" placeholder="Email ID">
+    <span class="error" *ngIf="">This is invalid</span><br><br>
+    <input type="number" class="form-control" ngModel formControlName="contact" placeholder="Contact"><br>
+    <button (click)="postuserdetails()" [disabled]="basic.invalid">Submit</button>
+    <button type="reset">Reset</button>
+    <button (click)="updateuser()">Update</button>
+</form>

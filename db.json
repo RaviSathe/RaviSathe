@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "firstname": "Hello",
+      "lastname": "mao",
+      "email": "dnjcnac",
+      "contact": 12345
+    },
+    {
+      "id": 3,
+      "firstname": "acdsd ",
+      "lastname": "dsc zsdxc",
+      "email": "eVDSF dvxb cv",
+      "contact": 2345
+    },
+    {
+      "id": 4,
+      "firstname": "asdbcfxz dvc",
+      "lastname": "dvsc x",
+      "email": "svzd fcv",
+      "contact": 123
+    },
+    {
+      "id": 5,
+      "firstname": "Ravi",
+      "lastname": "Sathe",
+      "email": "ravi22@gmail.com",
+      "contact": 19283764
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
